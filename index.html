@@ -33,13 +33,15 @@
         <li>Personalización</li>
     </ul>
 
-    <form action="">
-        <label for="nombre">Nombre Completo:</label>
-        <input type="text" name="nombre" id="nombre">
-        <label for="nombreempresa">Nombre de tu empresa:</label>
-        <input type="text" name="nombreempresa" id="nombreempresa">
-        <label for="servicio">¿Qué servicio te interesó?</label>
-        <select name="servicio" id="servicio">
+    <form action="/action_page.php">
+        <fieldset style="background-color: rgb(101, 141, 178);">
+          <legend>Agendá una llamada con nosotros</legend>
+          <label for="fname">Nombre:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Apellido:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br>
+          <label for="servicio">Servicio que te interesó:</label><br>
+          <select name="servicio" id="servicio">
             <option value="Optimizacion de cuenta">Optimizacion de cuenta</option>
             <option value="Manejo de contenido">Manejo de contenido</option>
             <option value="Campañas de anuncios">Campañas de anuncios</option>
@@ -49,9 +51,15 @@
             <option value="Más de uno">Más de uno</option>
             <option value="Todos los servicios">Todos los servicios</option>
         </select>
+        <label for="mensaje">¿Qué te interesa de nuestro servicio?¿Qué aspecto necesita de nuestra ayudemos tu empresa?</label><br>
+        <textarea name="message" style="width:600px; height:300px; float:left;">
+            </textarea><br>
+
+        <input type="submit" value="Enviar" style="background-color: rgb(40,0,104); color:white">
+        </fieldset>
+      </form>
         
-        
-    </form>
+
 
 </body>
 </html>
