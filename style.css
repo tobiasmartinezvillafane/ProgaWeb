@@ -1,83 +1,227 @@
-body{
-    background-color: rgb(97, 94, 116);
-}
-h1{
-    background-color: rgb(74, 23, 163);
-}
-
-.menuprincipal{
-    width: 100%;
+body {
+    margin: 80px 0 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFE8D1;
+  }
+  
+  /* Menu */
+  header {
+    background-color: #000000; /* Color de fondo del menú */
+    position: fixed; /* Menú fijo en la parte superior */
+    width: 100%; /* Ancho del menú al 100% */
+    top: 0; /* Posicionamiento en la parte superior */
+    z-index: 1000; /* Capa superior para que esté por encima del contenido */
+    padding: 10px 0; /* Espaciado interno del menú */
+    display: flex; /* Display flex para alinear elementos */
+    justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
+    align-items: center; /* Alinea los elementos verticalmente */
+  }
+  
+  .logo img {
+    width: 60px; /* Tamaño del logo */
+    height: 60px;
+    margin-left: 20px; /* Espaciado a la izquierda */
+  }
+  
+  nav ul {
+    list-style-type: none; /* Quita los puntos de lista */
     margin: 0;
     padding: 0;
-}
-
-.ulmenu{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(40, 0, 104);
-}
-.limenu{
-    float: right;
-}
-.limenu a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 30px;
-    text-decoration: none;
-}
-
-.limenu a:hover{
-    background-color: black;
-
-}
-
-input,select{
-    width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px; /* Espaciado entre elementos del menú */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Quita el margen derecho del último elemento */
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #FFE8D1; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno de cada enlace */
+    border-radius: 20px; /* Bordes redondeados */
+  }
+  
+  nav ul li a:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
   }
 
-.container{
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 80%;
-    margin: auto;
-    padding: 10px;
-    justify-content: center;
-}
 
-.containerhijo{
+/*Nosotros*/
+  .nosotros {
+    background-image: url(./imagenes/hombre-de-negocios-toca-una-pantalla-con-aplicaciones.jpg); /* Cambia 'ruta/a/tu/foto.jpg' por la ruta de tu foto */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
     text-align: center;
+    padding: 100px 0;
+    height: 50vh;
+  }
+  
+  .nosotros .container {
+    max-width: 800px;
     margin: 0 auto;
+  }
+  
+  .nosotros h2 {
+    font-size: 46px;
+    color: #1E1E24;
+  }
+  
+  .nosotros p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-contacto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-contacto:hover {
+    background-color: #555;
+  }
+
+
+/*Nosotros informacion*/
+.que-hacemos {
+  background-color: #000000;
+  padding: 50px 0;
+  height: 40vh;
 }
 
-.containerhijo h2{
-    margin: auto;
+.que-hacemos .containersn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.container2{
+.que-hacemos .descripcion {
+  width: 60%;
+}
+
+.que-hacemos .descripcion h2 {
+  font-size: 24px;
+  color: #FFE8D1;
+}
+
+.que-hacemos .descripcion p {
+  font-size: 16px;
+  color: #FFE8D1;
+}
+
+.que-hacemos .logo img {
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+/* servicios*/
+.containerb{
     display: grid;
-    grid-template-columns: auto auto;
-    width: 80%;
-    margin: auto;
-    padding: 10px;
-    justify-content: right;
-}
-
-.containerhijo2{
+    grid-template-columns: 1fr 1fr;
     text-align: center;
-    margin: 0 auto;
+    padding: 50px 12px;
+    background-color: #1E1E24;
+    color: #FFE8D1;
 }
 
-.containerhijo2 h2{
-    margin: auto;
+.containerb2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 50px 12px;
+    background-color: #2d2d39;
+    color: #FFE8D1;
 }
 
+
+
+
+
+
+/*formulario*/
+#contacto {
+    background-color: #1E1E24; /* Color de fondo del div grande */
+    padding: 50px 250px 50px 250px; /* Espaciado interno del div grande */
+    display: flex; /* Usa flexbox para alinear verticalmente */
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Contenido arriba de todo */
+    flex-grow: 1; /* Permite que el formulario crezca para ocupar todo el espacio disponible */
+
+}
+
+.info {
+    width: 70%; /* Ancho del div de información */
+    display: flex; /* Usa flexbox para alinear verticalmente */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+
+}
+.info h2,p,ul,li{
+    color: #FFE8D1;
+}
+
+.form {
+    width: 70%; /* Ancho del div del formulario */
+}
+
+fieldset {
+    border: none; /* Quita el borde del fieldset */
+    padding: 0 60px 60px 60px; /* Espaciado interno del fieldset */
+    border-radius: 10px; /* Bordes redondeados del fieldset */
+  }
+  
+  fieldset label,
+  fieldset textarea,
+  fieldset input[type="text"],
+  fieldset select {
+    display: block;
+    margin-bottom: 10px; /* Espaciado inferior entre elementos */
+    width: 100%; /* Ancho completo */
+  }
+  
+  textarea {
+    height: 200px; /* Altura del textarea */
+  }
+  
+  input[type="submit"] {
+    background-color: #FFE8D1; /* Color de fondo del botón de enviar */
+    color: #2d2d39; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 10px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  
+  /* Estilo para los elementos input y textarea para que sean circulares */
+  input[type="text"],
+  textarea {
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+  }
+
+
+/*foter*/
 footer {
     margin: 25px;
     text-align: center;
+    background-color: #FFE8D1;
 }
