@@ -1,7 +1,7 @@
 body {
     margin: 80px 0 0;
     font-family: Arial, sans-serif;
-    background-color: #FFE8D1;
+    background-color: #1E1E24;
   }
   
   /* Menu */
@@ -16,7 +16,10 @@ body {
     justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
     align-items: center; /* Alinea los elementos verticalmente */
   }
-  
+  .logo{
+    display: flex;
+    align-items: center;
+  }
   .logo img {
     width: 60px; /* Tamaño del logo */
     height: 60px;
@@ -49,86 +52,116 @@ body {
     background-color: #555; /* Color de fondo al pasar el ratón */
   }
 
+  .nombre {
+    font-size: 18px;
+    margin-left: 10px; /* Añade un margen a la izquierda para separar del logo */
+    color: #FFE8D1;
+  }
+
+
 
 /*Nosotros*/
-  .nosotros {
-    background-image: url(./imagenes/hombre-de-negocios-toca-una-pantalla-con-aplicaciones.jpg); /* Cambia 'ruta/a/tu/foto.jpg' por la ruta de tu foto */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-    height: 50vh;
-  }
+.nosotros {
   
-  .nosotros .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .nosotros h2 {
-    font-size: 46px;
-    color: #1E1E24;
-  }
-  
-  .nosotros p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .btn-contacto {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-contacto:hover {
-    background-color: #555;
-  }
-
-
-/*Nosotros informacion*/
-.que-hacemos {
-  background-color: #000000;
-  padding: 50px 0;
-  height: 40vh;
+  background-color: #2d2d39;
 }
 
-.que-hacemos .containersn {
+.nosotros .containern
+ {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
-.que-hacemos .descripcion {
-  width: 60%;
+.contenidon {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido */
 }
 
-.que-hacemos .descripcion h2 {
-  font-size: 24px;
+.contenidon h1 {
+  font-size: 104px;
+  margin: 0 0 20px 40px ; /* Ajusta el espacio entre el título y el logo */
+}
+
+.contenidon a{
+  background-color: #FFE8D1; /* Color de fondo del botón de enviar */
+    color: #2d2d39; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 10px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  
+}
+
+.logon {
+  display: flex;
+  align-items: center; /* Centra verticalmente el logo */
+}
+
+.logon img {
+  width: 70%; /* Ajusta el tamaño del logo según sea necesario */
+  margin-right: 10px;
+}
+
+.nombre {
+  font-size: 18px;
+}
+
+.foto-texto {
+  width: 50%;
+  text-align: center; /* Centra horizontalmente el texto */
+}
+
+.foto-texto img {
+  width: 100%;
+}
+
+
+/*que hacemos*/
+.que-hacemos{
+  background-color: #1E1E24;
+  margin: 20px auto 20px auto;
+}
+.que-hacemos .containerqh {
+  text-align: center; /* Centra el texto horizontalmente */
+}
+.que-hacemos .containerqh .contenidoqh h2{
+  
+  font-size: 45px;
+}
+/*
+.contenidoqh{
+  padding-bottom: 100px;
+}
+*/
+.que-hacemos .contenidoqh p {
+  font-size: 28px;
+  margin:  0 auto; /* Ajusta el margen para centrar el texto horizontalmente */
+  max-width: 600px; /* Establece el ancho máximo para el texto */
   color: #FFE8D1;
 }
-
-.que-hacemos .descripcion p {
-  font-size: 16px;
-  color: #FFE8D1;
-}
-
-.que-hacemos .logo img {
-  width: 300px;
-  height: 300px;
-}
-
 
 
 
 /* servicios*/
+
+.servicios{
+    background-color: #1E1E24;
+    text-align: center;
+  }
+.servicios .containers {
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+.servicios .conteiners h2{
+    padding: 20px auto 20px auto;
+    font-size: 45px;
+  }
+
+
+
+
 .containerb{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -221,7 +254,8 @@ fieldset {
 
 /*foter*/
 footer {
-    margin: 25px;
+    width: 100%;
+    padding: 15px;
     text-align: center;
     background-color: #FFE8D1;
 }
