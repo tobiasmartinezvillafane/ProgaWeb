@@ -10,7 +10,7 @@ body {
     position: fixed; /* Menú fijo en la parte superior */
     width: 100%; /* Ancho del menú al 100% */
     top: 0; /* Posicionamiento en la parte superior */
-    z-index: 1000; /* Capa superior para que esté por encima del contenido */
+    z-index: 9999999; /* Capa superior para que esté por encima del contenido */
     padding: 10px 0; /* Espaciado interno del menú */
     display: flex; /* Display flex para alinear elementos */
     justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
@@ -260,7 +260,7 @@ body {
 
 /*formulario*/
 #contacto {
-    background-color: #1E1E24; /* Color de fondo del div grande */
+    background-color: #2d2d39; /* Color de fondo del div grande */
     padding: 50px 250px 50px 250px; /* Espaciado interno del div grande */
     display: flex; /* Usa flexbox para alinear verticalmente */
 }
