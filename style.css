@@ -43,19 +43,19 @@ body {
   
   nav ul li a {
     text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #FFE8D1; /* Color del texto */
+    color: #9340FF; /* Color del texto */
     padding: 10px 20px; /* Espaciado interno de cada enlace */
     border-radius: 20px; /* Bordes redondeados */
   }
   
   nav ul li a:hover {
-    background-color: #555; /* Color de fondo al pasar el ratón */
+    background-color: #ffffff; /* Color de fondo al pasar el ratón */
   }
 
   .nombre {
     font-size: 18px;
     margin-left: 10px; /* Añade un margen a la izquierda para separar del logo */
-    color: #FFE8D1;
+    color: #9340FF;
   }
 
 
@@ -83,11 +83,12 @@ body {
 .contenidon h1 {
   font-size: 104px;
   margin: 0 0 20px 40px ; /* Ajusta el espacio entre el título y el logo */
+  color: #fff;
 }
 
 .contenidon a{
-  background-color: #FFE8D1; /* Color de fondo del botón de enviar */
-    color: #2d2d39; /* Color del texto del botón */
+  background-color: #9340FF; /* Color de fondo del botón de enviar */
+    color: #fff; /* Color del texto del botón */
     padding: 10px 20px; /* Espaciado interno del botón */
     border: none; /* Quita el borde del botón */
     border-radius: 10px; /* Bordes redondeados del botón */
@@ -113,35 +114,80 @@ body {
   width: 50%;
   text-align: center; /* Centra horizontalmente el texto */
 }
+.foto-texto p{
+  font-size: 35px;
+  color: #fff;
+}
 
 .foto-texto img {
-  width: 100%;
+  width: 60%;
 }
 
 
 /*que hacemos*/
 .que-hacemos{
   background-color: #1E1E24;
-  margin: 20px auto 20px auto;
+  margin: 20px 40px 20px 40px;
+  height: 20vw;
 }
 .que-hacemos .containerqh {
   text-align: center; /* Centra el texto horizontalmente */
+  
 }
 .que-hacemos .containerqh .contenidoqh h2{
-  
+  color: #9340FF;
   font-size: 45px;
 }
-/*
-.contenidoqh{
-  padding-bottom: 100px;
-}
-*/
+
 .que-hacemos .contenidoqh p {
-  font-size: 28px;
-  margin:  0 auto; /* Ajusta el margen para centrar el texto horizontalmente */
-  max-width: 600px; /* Establece el ancho máximo para el texto */
-  color: #FFE8D1;
+  text-align: center; /* Ajusta el margen para centrar el texto horizontalmente */
+  color: #ffffff;
+  font-size: 35px;
 }
+
+
+/* conoce el equipo*/
+.meet-the-team {
+  padding: 100px 0;
+  background-color: #2d2d39;
+}
+
+.meet-the-team .containermtt {
+  display: flex;
+}
+.meet-the-team{
+  text-align: center;
+}
+
+.meet-the-team h2{
+  color: #9340FF;
+  font-size: 45px;
+}
+
+.team-member {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Hace la imagen circular */
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #666;
+}
+
 
 
 
@@ -155,8 +201,9 @@ body {
     text-align: center; /* Centra el texto horizontalmente */
   }
 .servicios .conteiners h2{
-    padding: 20px auto 20px auto;
+    
     font-size: 45px;
+    color: #9340FF;
   }
 
 
@@ -182,6 +229,32 @@ body {
 
 
 
+/*numeros*/
+
+.three-columns {
+  display: flex;
+  margin: auto;
+}
+
+.three-columns h2{
+  color: #9340FF;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.column h2 {
+  font-size: 54px;
+}
+
+.column p {
+  font-size: 26px;
+  color: #fff;
+}
+
 
 
 
@@ -205,10 +278,15 @@ body {
     display: flex; /* Usa flexbox para alinear verticalmente */
     flex-direction: column; /* Apila los elementos verticalmente */
     align-items: flex-start; /* Alinea los elementos en la parte superior */
-
+    text-align: left;
 }
-.info h2,p,ul,li{
-    color: #FFE8D1;
+
+.info h2{
+  color: #9340FF;
+  font-size: 35px;
+}
+.info p,ul,li{
+    color: #fff;
 }
 
 .form {
@@ -235,8 +313,8 @@ fieldset {
   }
   
   input[type="submit"] {
-    background-color: #FFE8D1; /* Color de fondo del botón de enviar */
-    color: #2d2d39; /* Color del texto del botón */
+    background-color: #9340FF; /* Color de fondo del botón de enviar */
+    color: #ffffff; /* Color del texto del botón */
     padding: 10px 20px; /* Espaciado interno del botón */
     border: none; /* Quita el borde del botón */
     border-radius: 10px; /* Bordes redondeados del botón */
@@ -257,5 +335,9 @@ footer {
     width: 100%;
     padding: 15px;
     text-align: center;
-    background-color: #FFE8D1;
+    background-color: #9340FF;
+}
+
+footer a{
+  color: #fff;
 }
