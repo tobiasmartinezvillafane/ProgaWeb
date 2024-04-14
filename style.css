@@ -2,72 +2,72 @@ body {
     margin: 80px 0 0;
     font-family: Arial, sans-serif;
     background-color: #1E1E24;
-  }
+}
   
   /* Menu */
-  header {
-    background-color: #000000; /* Color de fondo del menú */
-    position: fixed; /* Menú fijo en la parte superior */
-    width: 100%; /* Ancho del menú al 100% */
-    top: 0; /* Posicionamiento en la parte superior */
-    z-index: 9999999; /* Capa superior para que esté por encima del contenido */
-    padding: 10px 0; /* Espaciado interno del menú */
-    display: flex; /* Display flex para alinear elementos */
-    justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
-    align-items: center; /* Alinea los elementos verticalmente */
-  }
-  .logo{
-    display: flex;
-    align-items: center;
-  }
-  .logo img {
-    width: 60px; /* Tamaño del logo */
-    height: 60px;
-    margin-left: 20px; /* Espaciado a la izquierda */
-  }
-  
-  nav ul {
-    list-style-type: none; /* Quita los puntos de lista */
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 20px; /* Espaciado entre elementos del menú */
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0; /* Quita el margen derecho del último elemento */
-  }
-  
-  nav ul li a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #9340FF; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno de cada enlace */
-    border-radius: 20px; /* Bordes redondeados */
-  }
-  
-  nav ul li a:hover {
-    background-color: #ffffff; /* Color de fondo al pasar el ratón */
-  }
+header {
+  background-color: #000000; 
+  position: fixed; 
+  width: 100%; 
+  top: 0;
+  z-index: 9999999; 
+  padding: 10px 0;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
 
-  .nombre {
-    font-size: 18px;
-    margin-left: 10px; /* Añade un margen a la izquierda para separar del logo */
-    color: #9340FF;
-  }
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px; 
+  height: 60px;
+  margin-left: 20px; 
+}
+  
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+  
+nav ul li {
+  margin-right: 20px; 
+}
+  
+nav ul li:last-child {
+  margin-right: 0; 
+}
+  
+nav ul li a {
+  text-decoration: none; 
+  color: #9340FF; 
+  padding: 10px 20px; 
+  border-radius: 15px; 
+}
+  
+nav ul li a:hover {
+  background-color: #ffffff; 
+}
+
+.nombre {
+  font-size: 18px;
+  margin-left: 10px; 
+  color: #9340FF;
+}
 
 
 
 /*Nosotros*/
 .nosotros {
-  
   background-color: #2d2d39;
 }
 
-.nosotros .containern
- {
+.nosotros .containern {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +82,7 @@ body {
 
 .contenidon h1 {
   font-size: 104px;
-  margin: 0 0 20px 40px ; /* Ajusta el espacio entre el título y el logo */
+  margin: 0 0 20px 40px ; 
   color: #fff;
 }
 
@@ -91,8 +91,8 @@ body {
     color: #fff; /* Color del texto del botón */
     padding: 10px 20px; /* Espaciado interno del botón */
     border: none; /* Quita el borde del botón */
-    border-radius: 10px; /* Bordes redondeados del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 10px; 
+    text-decoration: none;
   
 }
 
@@ -218,6 +218,10 @@ body {
     color: #FFE8D1;
 }
 
+.containerhijo img{
+  border-radius: 10px;
+}
+
 .containerb2{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -225,6 +229,10 @@ body {
     padding: 50px 12px;
     background-color: #2d2d39;
     color: #FFE8D1;
+}
+
+.containerhijo2 img{
+  border-radius: 10px;
 }
 
 
@@ -340,4 +348,5 @@ footer {
 
 footer a{
   color: #fff;
+  text-decoration: none;
 }
