@@ -4,6 +4,8 @@ body {
     background-color: #1E1E24;
 }
 
+/*computadora*/
+
 @media screen and (min-width:769px) {
     header {
         background-color: #000000; 
@@ -359,7 +361,7 @@ body {
           padding: 10px 20px; 
           border: none; 
           border-radius: 10px; 
-          cursor: pointer; 
+          
         }
         
         
