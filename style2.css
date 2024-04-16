@@ -1,0 +1,388 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #1E1E24;
+}
+
+@media screen and (min-width:769px) {
+    header {
+        background-color: #000000; 
+        position: fixed; 
+        width: 100%; 
+        top: 0;
+        z-index: 9999999; 
+        padding: 10px 0;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+   
+    .logo {
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 60px; 
+        height: 60px;
+        margin-left: 20px; 
+    }
+    
+    .nombre {
+        font-size: 18px;
+        margin-left: 10px; 
+        color: #9340FF;
+    }
+    
+    
+    nav {
+        width: 80%; 
+        text-align: right;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end; 
+    }
+    
+    nav ul li {
+        margin-left: 20px; 
+    }
+    
+    nav ul li:first-child {
+        margin-left: 0; 
+    }
+    
+    nav ul li a {
+        text-decoration: none; 
+        color: #9340FF; 
+        padding: 10px; 
+    }
+    
+    nav ul li a:hover {
+        background-color: #ffffff; 
+        border-radius: 8px;
+    }
+
+      
+      
+      /*Nosotros*/
+      .nosotros {
+        background-color: #2d2d39;
+        display: flex;
+        padding: 70px 0 0 0;
+      }
+      
+      .nosotros .containern {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+      }
+      
+      .contenidon {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-top: 80px;
+    }
+      
+      .contenidon h1 {
+        font-size: 104px;
+        margin: 0 0 20px 40px ; 
+        color: #fff;
+      }
+      
+      .contenidon a{
+        background-color: #9340FF; 
+          color: #fff; 
+          padding: 10px 20px; 
+          border: none; 
+          border-radius: 10px; 
+          text-decoration: none;
+          
+        
+      }
+      
+      .logon {
+        display: flex;
+        align-items: right; 
+        
+    }
+      
+      .logon img {
+        width: 70%; 
+        margin-right: 10px;
+      }
+      
+      .nombre {
+        font-size: 18px;
+      }
+      
+      .foto-texto {
+        width: 49%;
+        text-align: center;
+        padding: 20px;
+    }
+      .foto-texto p{
+        font-size: 35px;
+        color: #fff;
+      }
+      
+      .foto-texto img {
+        width: 60%;
+      }
+      
+      
+      /*que hacemos*/
+      .que-hacemos{
+        background-color: #1E1E24;
+        margin: 20px 40px 20px 40px;
+        height: 20vw;
+      }
+      .que-hacemos .containerqh {
+        text-align: center;
+        
+      }
+      .que-hacemos .containerqh .contenidoqh h2{
+        color: #9340FF;
+        font-size: 45px;
+      }
+      
+      .que-hacemos .contenidoqh p {
+        text-align: center; 
+        color: #ffffff;
+        font-size: 35px;
+      }
+      
+      
+      /* conoce el equipo*/
+      .conoceelequipo {
+        padding: 100px 0;
+        background-color: #2d2d39;
+      }
+      
+      .conoceelequipo .containermtt {
+        display: flex;
+      }
+      .conoceelequipo{
+        text-align: center;
+      }
+      
+      .conoceelequipo h2{
+        color: #9340FF;
+        font-size: 45px;
+      }
+      
+      .persona {
+        flex: 1;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .persona img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%; 
+        margin-bottom: 20px;
+      }
+      
+      .persona h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+      
+      .persona p {
+        font-size: 16px;
+        color: #666;
+      }
+      
+      
+      
+      
+      /* servicios*/
+      
+      .servicios{
+          background-color: #1E1E24;
+          text-align: center;
+          width: 100%;
+        }
+        .servicios  h2{
+            color: #9340FF;
+            font-size: 36px;
+            margin: 60px;
+          }
+
+        
+      
+      
+      .containerb{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          text-align: center;
+          padding: 50px 12px;
+          background-color: #1E1E24;
+          color: #FFE8D1;
+      }
+      
+      .containerhijo img{
+        border-radius: 10px;
+      }
+
+      
+      .containerb2{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          text-align: center;
+          padding: 50px 12px;
+          background-color: #2d2d39;
+          
+      }
+      
+      .containerhijo2 img{
+        border-radius: 10px;
+      }
+
+      .containerhijo h3{
+        color: #fff;
+      }
+      .containerhijo2 h3{
+        color: #fff;
+      }
+
+      .containerhijo ul li{
+        color: #fff;
+        list-style: none;
+      }
+    
+      .containerhijo2 ul li{
+        color: #fff;
+        list-style: none;
+      }
+      
+      
+      
+      /*numeros*/
+      
+      .columnas {
+        display: flex;
+        margin: auto;
+      }
+      
+      .columnas h2{
+        color: #9340FF;
+      }
+      
+      .columna {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .columna h2 {
+        font-size: 54px;
+      }
+      
+      .columna p {
+        font-size: 26px;
+        color: #fff;
+      }
+      
+      
+      
+      
+      /*formulario*/
+      #contacto {
+          background-color: #2d2d39; 
+          padding: 50px 250px 50px 250px; 
+          display: flex;
+      }
+      
+      .formulario {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start; 
+          flex-grow: 1; 
+      
+      }
+      
+      .info {
+          width: 70%; 
+          display: flex; 
+          flex-direction: column; 
+          align-items: flex-start; 
+          text-align: left;
+      }
+      
+      .info h2{
+        color: #9340FF;
+        font-size: 35px;
+      }
+      .info p,ul,li{
+          color: #fff;
+      }
+      
+      .form {
+          width: 70%; 
+      }
+      
+      fieldset {
+          border: none; 
+          padding: 0 60px 60px 60px; 
+          border-radius: 10px;
+        }
+        
+        fieldset label,
+        fieldset textarea,
+        fieldset input[type="text"],
+        fieldset select {
+          display: block;
+          margin-bottom: 10px; 
+          width: 100%; 
+        }
+        
+        textarea {
+          height: 200px;
+        }
+        
+        input[type="submit"] {
+          background-color: #9340FF; 
+          color: #ffffff; 
+          padding: 10px 20px; 
+          border: none; 
+          border-radius: 10px; 
+          cursor: pointer; 
+        }
+        
+        
+    
+        input[type="text"],
+        textarea {
+          border-radius: 10px; 
+          padding: 10px; 
+        }
+      
+      
+      /*foter*/
+      footer {
+          width: 100%;
+          padding: 15px;
+          text-align: center;
+          background-color: #9340FF;
+      }
+      
+      footer a{
+        color: #fff;
+        text-decoration: none;
+      }
+      
+    
+}
