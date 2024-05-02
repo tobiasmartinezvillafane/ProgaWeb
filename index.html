@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScaleUp Solutions</title>
+    <link rel="icon" type="image/x-icon" href="./imagenes/logo sin nombre png.png">
 </head>
 <body>
     <!-- menu -->
@@ -185,14 +186,12 @@
 
         </div>
         <div class="form">
-            <form action="/action_page.php">
+            <form action="https://formsubmit.co/tobiasmartinezvillafane@gmail.com" method="POST">
                 <fieldset >
-                  <label for="fname"></label>
                   <input type="text" id="fname" name="fname" placeholder="Nombre y apellido">
-                  <label for="lname"></label>
                   <input type="text" id="lname" name="lname" placeholder="Email">
-                <textarea name="message" placeholder="Mensaje" style="font-family: Arial, Helvetica, sans-serif;"></textarea>
-                <input type="submit" value="Enviar" >
+                <textarea type="text" name="message" placeholder="Mensaje" style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+                <input type="submit" id="enviar" value="Enviar" >
                 </fieldset>
               </form>
         </div>
@@ -206,4 +205,26 @@
 
 
 </body>
+
+<script>
+    // Función para mostrar el popup
+    function mostrarPopup() {
+      document.getElementById("overlay").style.display = "flex";
+    }
+  
+    // Evento que muestra el popup cuando se carga la página
+    window.addEventListener("load", function() {
+      mostrarPopup();
+    });
+  
+    // Evento para cerrar el popup cuando se envía el formulario
+    document.getElementById("emailForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Evita el envío del formulario
+      document.getElementById("overlay").style.display = "none"; // Oculta el popup
+    });
+  </script>
+
+
+
+
 </html>
