@@ -8,19 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScaleUp Solutions</title>
     <link rel="icon" type="image/x-icon" href="./imagenes/logo sin nombre png.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
     <!-- menu -->
     <header id="header">
     <!--logo-->    
         <div class="logo">
-            <a href="#header"><img src="./imagenes/scaleup.jpg" alt="logo sacleup solutions"></a>
+            <a href="#nosotros"><img src="./imagenes/scaleup.jpg" alt="logo sacleup solutions"></a>
             <span class="nombre">ScaleUp</span>
         </div>
     <!-- opciones menu -->
         <nav>
             <ul>
-            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#conoceelequipo">Nosotros</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -188,9 +189,9 @@
         <div class="form">
             <form action="https://formsubmit.co/tobiasmartinezvillafane@gmail.com" method="POST">
                 <fieldset >
-                  <input type="text" id="fname" name="fname" placeholder="Nombre y apellido">
-                  <input type="text" id="lname" name="lname" placeholder="Email">
-                <textarea type="text" name="message" placeholder="Mensaje" style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+                  <input type="text" id="fname" name="nombre" placeholder="Nombre y apellido">
+                  <input type="text" id="lname" name="correo" placeholder="Email">
+                <textarea type="text" name="mensaje" placeholder="Mensaje" style="font-family: Arial, Helvetica, sans-serif;"></textarea>
                 <input type="submit" id="enviar" value="Enviar" >
                 </fieldset>
               </form>
@@ -207,20 +208,48 @@
 </body>
 
 <script>
-    // Función para mostrar el popup
-    function mostrarPopup() {
-      document.getElementById("overlay").style.display = "flex";
+    async function mostrarPopup() {
+      const { value: email } = await Swal.fire({
+        title: "Ingresa tu dirección de correo electrónico",
+        input: "email",
+        inputLabel: "Tu dirección de correo electrónico",
+        inputPlaceholder: "Ingresa tu correo electrónico",
+        showCancelButton: true,
+        customClass: {
+          confirmButton: "btn-confirm",
+          cancelButton: "btn-cancel",
+          popup: "custom-popup"
+        }
+      });
+      
+      if (email) {
+        enviarCorreo(email);
+      }
     }
   
-    // Evento que muestra el popup cuando se carga la página
+    async function enviarCorreo(email) {
+      try {
+        const response = await fetch("/enviar-correo", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ email })
+        });
+  
+        if (response.ok) {
+          Swal.fire("¡Correo electrónico enviado!", "Revisaremos tu mensaje pronto.", "success");
+        } else {
+          Swal.fire("Error", "Hubo un problema al enviar el correo electrónico.", "error");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        Swal.fire("Error", "Hubo un problema al enviar el correo electrónico.", "error");
+      }
+    }
+  
     window.addEventListener("load", function() {
       mostrarPopup();
-    });
-  
-    // Evento para cerrar el popup cuando se envía el formulario
-    document.getElementById("emailForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Evita el envío del formulario
-      document.getElementById("overlay").style.display = "none"; // Oculta el popup
     });
   </script>
 

@@ -295,7 +295,7 @@ nav ul li a:hover {
 
   footer{
     width: 100%;
-    padding: 1vh;
+    
     background-color: #9340FF;
     text-align: center;
   }
@@ -305,5 +305,26 @@ nav ul li a:hover {
   }
 
   
+  /*pop up*/
+  .custom-popup {
+    border-radius: 20px; /* Bordes circulares */
+  }
+
+  .swal2-popup {
+    background-color: #f3f3f3; /* Cambia el color de fondo */
+  }
+
+  .btn-confirm {
+    border-radius: 20px; /* Bordes circulares para el botón de confirmación */
+    background-color: #9340FF; /* Cambia el color de fondo del botón de confirmación */
+    color: #fff; /* Cambia el color del texto del botón de confirmación */
+  }
+
+  .btn-cancel {
+    border-radius: 20px; /* Bordes circulares para el botón de cancelación */
+    border-color: #9340FF; /* Cambia el color del borde del botón de cancelación */
+    color: #9340FF; /* Cambia el color del texto del botón de cancelación */
+  }
+
 }
     
