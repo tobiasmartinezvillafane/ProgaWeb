@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="style2.css">
 <link rel="stylesheet" href="style.css">
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScaleUp Solutions</title>
     <link rel="icon" type="image/x-icon" href="./imagenes/logo sin nombre png.png">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-</head>
+    
+  </head>
 <body>
     <!-- menu -->
     <header id="header">
@@ -157,6 +158,12 @@
 
 </section>
 
+<!-- calculadora presupuesto -->
+<div class="calculadora">
+  <p>Calcular presupuesto de servicios</p>
+  <button id="calcularBtn">Calcular Presupuesto</button>
+</div>
+
 <!-- numeros -->
 <section class="columnas">
         <div class="columna">
@@ -172,7 +179,9 @@
             <p>de tu tiempo mensual es suficiente para dejar todo el contenido resuelto</p>
           </div>
 </section>
-    
+
+
+
 <!--formulario-->
 <section id="contacto">
     <div class="formulario">
@@ -199,61 +208,13 @@
     </div>
 </section>
 
-
+<!-- Footer -->
 <footer>
     <p><a href="https://www.linkedin.com/company/scaleup-solutions-agencia/">ScaleUp Solutions</a></p>
 </footer>
 
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="script.js"></script>
 </body>
-
-<script>
-    async function mostrarPopup() {
-      const { value: email } = await Swal.fire({
-        title: "Ingresa tu dirección de correo electrónico",
-        input: "email",
-        inputLabel: "Tu dirección de correo electrónico",
-        inputPlaceholder: "Ingresa tu correo electrónico",
-        showCancelButton: true,
-        customClass: {
-          confirmButton: "btn-confirm",
-          cancelButton: "btn-cancel",
-          popup: "custom-popup"
-        }
-      });
-      
-      if (email) {
-        enviarCorreo(email);
-      }
-    }
-  
-    async function enviarCorreo(email) {
-      try {
-        const response = await fetch("/enviar-correo", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({ email })
-        });
-  
-        if (response.ok) {
-          Swal.fire("¡Correo electrónico enviado!", "Revisaremos tu mensaje pronto.", "success");
-        } else {
-          Swal.fire("Error", "Hubo un problema al enviar el correo electrónico.", "error");
-        }
-      } catch (error) {
-        console.error("Error:", error);
-        Swal.fire("Error", "Hubo un problema al enviar el correo electrónico.", "error");
-      }
-    }
-  
-    window.addEventListener("load", function() {
-      mostrarPopup();
-    });
-  </script>
-
-
-
-
 </html>

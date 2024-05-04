@@ -298,9 +298,85 @@ body {
         color: #fff;
       }
       
+
+
+      /* calculadora de costos */
+      .calculadora {
+        display: flex;
+        flex-direction: column; /* Apila los elementos verticalmente */
+        justify-content: center; /* Centra verticalmente los elementos */
+        align-items: center; /* Centra horizontalmente los elementos */
+        height: 200px; /* Altura de la sección */
+        padding: 20px; /* Márgenes alrededor de la sección */
+        background-color: #2d2d39;
+      }
       
+      .calculadora p {
+        margin-bottom: 20px; /* Espacio entre el texto y el botón */
+        font-size: 36px;
+        color: #fff;
+      }
       
+      .calculadora button {
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        background-color: #9340FF;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+
+      .modal {
+        width: 70%; /* Ajusta el ancho de la alerta según sea necesario */
+        max-width: 1900px; /* Establece un ancho máximo para la alerta */
+        background-color: #ffffff; /* Color de fondo blanco */
+        border-radius: 10px; /* Bordes redondeados */
+        padding: 20px; /* Espaciado interno */
+      }
       
+      .modal-content {
+        padding: 20px;
+      }
+      
+      .modal-content input[type="checkbox"] {
+        margin-right: 5px;
+      }
+      
+      .modal-content label {
+        display: block;
+      }
+      
+      .close {
+        font-size: 20px;
+        background: transparent;
+        border: none;
+        color: #000;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        background-color: #9340FF;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      
+      button:hover {
+        background-color: #a29c9c;
+        color: #9340FF;
+      }
+
+
+
       /*formulario*/
       #contacto {
           background-color: #2d2d39; 
@@ -386,26 +462,6 @@ body {
         text-decoration: none;
       }
 
-      /*pop up*/
-      .custom-popup {
-        border-radius: 20px; /* Bordes circulares */
-      }
-    
-      .swal2-popup {
-        background-color: #f3f3f3; /* Cambia el color de fondo */
-      }
-    
-      .btn-confirm {
-        border-radius: 20px; /* Bordes circulares para el botón de confirmación */
-        background-color: #9340FF; /* Cambia el color de fondo del botón de confirmación */
-        color: #fff; /* Cambia el color del texto del botón de confirmación */
-      }
-    
-      .btn-cancel {
-        border-radius: 20px; /* Bordes circulares para el botón de cancelación */
-        border-color: #9340FF; /* Cambia el color del borde del botón de cancelación */
-        color: #9340FF; /* Cambia el color del texto del botón de cancelación */
-      }
       
     
 }
