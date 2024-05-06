@@ -55,6 +55,12 @@
 // console.log(duplicar(4))
 // //
 
+
+
+
+
+
+
 // pop up newsletter
     async function mostrarPopup() {
       const { value: email } = await Swal.fire({

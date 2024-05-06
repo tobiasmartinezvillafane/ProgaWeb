@@ -52,18 +52,13 @@ body {
         justify-content: flex-end; 
     }
     
-    nav ul li {
-        margin-left: 20px; 
-    }
     
-    nav ul li:first-child {
-        margin-left: 0; 
-    }
     
     nav ul li a {
         text-decoration: none; 
         color: #9340FF; 
         padding: 10px; 
+        margin-right: 20px;
     }
     
     nav ul li a:hover {
@@ -162,6 +157,7 @@ body {
         text-align: center; 
         color: #ffffff;
         font-size: 35px;
+        margin: 10px 200px 30px 200px;
       }
       
       
@@ -219,7 +215,7 @@ body {
         }
         .servicios  h2{
             color: #9340FF;
-            font-size: 36px;
+            font-size: 46px;
             margin: 60px;
           }
 
@@ -255,9 +251,11 @@ body {
 
       .containerhijo h3{
         color: #fff;
+        font-size: 24px;
       }
       .containerhijo2 h3{
         color: #fff;
+        font-size: 24px;
       }
 
       .containerhijo ul li{
@@ -303,16 +301,16 @@ body {
       /* calculadora de costos */
       .calculadora {
         display: flex;
-        flex-direction: column; /* Apila los elementos verticalmente */
-        justify-content: center; /* Centra verticalmente los elementos */
-        align-items: center; /* Centra horizontalmente los elementos */
-        height: 200px; /* Altura de la sección */
-        padding: 20px; /* Márgenes alrededor de la sección */
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        height: 200px; 
+        padding: 20px; 
         background-color: #2d2d39;
       }
       
       .calculadora p {
-        margin-bottom: 20px; /* Espacio entre el texto y el botón */
+        margin-bottom: 20px; 
         font-size: 36px;
         color: #fff;
       }
@@ -329,11 +327,11 @@ body {
 
 
       .modal {
-        width: 70%; /* Ajusta el ancho de la alerta según sea necesario */
-        max-width: 1900px; /* Establece un ancho máximo para la alerta */
-        background-color: #ffffff; /* Color de fondo blanco */
-        border-radius: 10px; /* Bordes redondeados */
-        padding: 20px; /* Espaciado interno */
+        width: 70%; 
+        max-width: 1900px; 
+        background-color: #ffffff; 
+        border-radius: 10px; 
+        padding: 20px; 
       }
       
       .modal-content {
@@ -437,8 +435,11 @@ body {
           padding: 10px 20px; 
           border: none; 
           border-radius: 10px; 
+          cursor: pointer;
           
         }
+
+       
         
         
     
@@ -452,7 +453,7 @@ body {
       /*foter*/
       footer {
           width: 100%;
-          padding: 15px;
+          padding: 15px 0 15px;
           text-align: center;
           background-color: #9340FF;
       }
