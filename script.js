@@ -228,4 +228,21 @@
         // Agregar la alerta modal al cuerpo del documento
         document.body.appendChild(modal);
       });
+
+
+      document.addEventListener("DOMContentLoaded", function() {
+        const items = document.querySelectorAll(".item");
+      
+        window.addEventListener("scroll", function() {
+          items.forEach(item => {
+            const itemTop = item.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+      
+            // Si el elemento está en la parte visible de la ventana
+            if (itemTop < windowHeight) {
+              item.style.opacity = 1; // Mostrar el elemento gradualmente
+            }
+          });
+        });
+      });
     });
